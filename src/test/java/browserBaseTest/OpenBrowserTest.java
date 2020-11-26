@@ -10,7 +10,7 @@ public class OpenBrowserTest {
     @Test
     public void openBrowserTest () {
         BrowserBaseTest browserBaseTest = new BrowserBaseTest();
-        WebDriver webDriver = BrowserBaseTest.openBrowser("https://www.google.es");
+        WebDriver webDriver = BrowserBaseTest.openBrowser("https://www.google.es", "src/main/resources/chromedriver.exe");
         Assert.assertTrue(webDriver.getCurrentUrl().contentEquals("https://www.google.es/"));
     }
 

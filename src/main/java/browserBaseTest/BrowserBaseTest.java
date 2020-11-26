@@ -10,8 +10,8 @@ public class BrowserBaseTest {
      * Opens a browser and navigates to the given url
      * @param url utl we want to open when launching the browser
      */
-    public static WebDriver openBrowser(String url) {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+    public static WebDriver openBrowser(String url, String chromeDriverPath) {
+        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         WebDriver webDriver = new ChromeDriver();
         webDriver.get(url);
         return webDriver;
