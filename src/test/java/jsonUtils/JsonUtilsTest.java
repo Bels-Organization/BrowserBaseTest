@@ -21,7 +21,6 @@ public class JsonUtilsTest {
         JSONParser jsonParser = new JSONParser();
         Object expectedObj = jsonParser.parse(json);
         JSONObject expectedJsonObject = (JSONObject) expectedObj;
-        JsonUtils jsonUtils = new JsonUtils();
         JSONObject jsonObject = readJsonDataset("src/test/resources/JsonUtilsTest.json");
         Assert.assertEquals(jsonObject, expectedJsonObject);
     }
