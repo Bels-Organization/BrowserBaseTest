@@ -21,7 +21,7 @@ public class BrowserBaseTest {
      * Closes an open browser
      * @param webDriver webDriver controlling the browser to be closed
      */
-    public void closeBrowser(WebDriver webDriver) {
+    public static void closeBrowser(WebDriver webDriver) {
         try {
             webDriver.close();
         } catch (NoSuchSessionException e) {
@@ -33,6 +33,10 @@ public class BrowserBaseTest {
      * Waits until the browser has loaded the page
      */
     public void waitForPageToLoad() {
+
+    }
+
+    public void main () {
 
     }
 }
