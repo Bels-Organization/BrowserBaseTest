@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "caseID": 1,
+      "description": "First case test"
+    },
+    {
+      "caseID": 2,
+      "description": "Second case test"
+    }
+  ]
+}
